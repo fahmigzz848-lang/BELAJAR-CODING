@@ -4,7 +4,7 @@ body {
   color: #191970; /*warna teks utama */
 }
 
-.kartu profil {
+.kartu-profil {
   width: 300px;
   margin: 50px auto; /* 50px jarak ke atas/bawah, auto menengahkan kiri/kanan*/
   padding: 20px;
@@ -13,11 +13,11 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0,1); /*efek bayangan*/
 }
 
-.kartu profil img {
+.kartu-profil img {
   width: 150px;
   border-radius: 50%; /*trik untuk membuat gambar persegi menjadi lingkaran sempurna*/
 }
-.kartu profil {
+.kartu-profil {
   width: 150px;
   border-radius: 50%;
   text-align: center; /*menengahkan semua teks di dalam kartu*/
