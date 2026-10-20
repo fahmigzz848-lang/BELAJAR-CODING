@@ -1,24 +1,29 @@
+/* Mengatur tampilan dasar halaman web */
 body {
-  background-color: #000000; /*warna kuning cerah*/
-  font-family: Arial, sans-serif; /*jenis hurufyang bersih */
-  color: #191970; /*warna teks utama */
+  background-color: #000000; /* Warna latar belakang hitam (bisa diganti jika ingin warna lain) */
+  font-family: Arial, sans-serif; /* Jenis huruf yang bersih dan mudah dibaca */
+  color: #191970; /* Warna teks utama (Midnight Blue) */
 }
 
+/* Mengatur wadah/kartu profil */
 .kartu-profil {
-  width: 300px;
-  margin: 50px auto; /* 50px jarak ke atas/bawah, auto menengahkan kiri/kanan*/
-  padding: 20px;
-  background-color: yellow;
-  border-radius: 15px; /*membuat sudut jadi melengkung*/
-  box-shadow: 0 4px 8px rgba(0,0,0,0,1); /*efek bayangan*/
+  width: 300px; /* Lebar kartu */
+  margin: 50px auto; /* 50px jarak ke atas/bawah, 'auto' untuk memosisikan kartu di tengah layar */
+  padding: 20px; /* Jarak antara konten di dalam kartu dengan tepi kartu */
+  background-color: yellow; /* Warna latar belakang kartu */
+  border-radius: 15px; /* Membuat sudut kartu jadi melengkung halus */
+  
+  /* PERBAIKAN: Mengubah koma menjadi titik pada nilai alpha (0.1) agar efek bayangan berfungsi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  
+  /* PERBAIKAN: Menggabungkan teks center di sini agar semua komponen di dalam kartu berada di tengah */
+  text-align: center; 
 }
 
+/* Mengatur tampilan foto di dalam kartu profil */
 .kartu-profil img {
-  width: 150px;
-  border-radius: 50%; /*trik untuk membuat gambar persegi menjadi lingkaran sempurna*/
-}
-.kartu-profil {
-  width: 150px;
-  border-radius: 50%;
-  text-align: center; /*menengahkan semua teks di dalam kartu*/
+  width: 150px; /* Lebar foto */
+  height: 150px; /* Tinggi foto agar proporsional */
+  border-radius: 50%; /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna */
+  object-fit: cover; /* Memastikan foto tidak terlihat gepeng */
 }
